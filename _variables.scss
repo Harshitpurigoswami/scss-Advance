@@ -1,0 +1,8 @@
+$primary-color: #4dff00;
+$secondary-color: #ff7300;
+$primary-position: right;
+
+@mixin primary-btn($bgcolor,$color){
+    background: $bgcolor;
+    @content;
+}

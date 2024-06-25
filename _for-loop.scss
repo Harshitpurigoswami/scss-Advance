@@ -1,0 +1,40 @@
+@for $i from 1 through 3 {
+    .box-#{$i} {
+        width: 100*$i;
+    }
+}
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+ 
+@each $keys, $value in $breakpoints {
+    @media screen and (min-width:#{$value}) {
+        @if($keys !="xs") {
+            .d-#{$keys}-none {
+                display: none;
+            }
+        }
+        @else{
+            .d-none{
+                display: none;
+            }
+        }
+
+        @if($keys !="xs") {
+            .d-#{$keys}-block {
+                display: block;
+            }
+        } 
+        @else{
+            .d-block{
+                display: block;
+            }
+        }
+    }
+}

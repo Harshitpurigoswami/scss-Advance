@@ -1,0 +1,59 @@
+@import 'variables';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  background: #6f6f6f;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+%box_width-height{
+  width: 150px;
+  height: 150px;
+}
+.box{
+  background: $primary-color;
+  @extend %box_width-height;
+  padding-#{$primary-position}: 30px;
+}
+
+.box-2{ 
+  margin: 10px;
+  @at-root{
+    button{
+      @include primary-btn(red,white){
+        padding: 10px
+      };
+    }
+  }
+}
+
+// Function 
+@function function-name($value){
+  @return $value * 2;
+}
+
+.function-value{
+  width: function-name(100px);
+  @if 5>8{
+    padding: 10px;
+  }
+  @else{
+    padding: 20px;
+  }
+}
+
+@import "for-loop";

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: #6f6f6f;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+}
+
+.box {
+  background: #4dff00;
+  padding-right: 30px;
+}
+
+.box-2 {
+  margin: 10px;
+}
+button {
+  background: red;
+  padding: 10px;
+}
+
+.function-value {
+  width: 200px;
+  padding: 20px;
+}
+
+.box-1 {
+  width: 100;
+}
+
+.box-2 {
+  width: 200;
+}
+
+.box-3 {
+  width: 300;
+}
+
+@media screen and (min-width: 0) {
+  .d-none {
+    display: none;
+  }
+  .d-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) {
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .d-lg-none {
+    display: none;
+  }
+  .d-lg-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .d-xl-none {
+    display: none;
+  }
+  .d-xl-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .d-xxl-none {
+    display: none;
+  }
+  .d-xxl-block {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
