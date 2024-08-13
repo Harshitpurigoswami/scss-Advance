@@ -1,40 +1,31 @@
-@for $i from 1 through 3 {
-    .box-#{$i} {
-        width: 100*$i;
+// For loop
+
+// each loop
+
+@for $value from 1 through  5{
+    .loop-for{
+        width: $value + px;
     }
 }
 
-$breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
+// form and through is count hole number
+// form and to is count one less number like 1 to 5 so answer is 1 ,2 ,3, 4
+
+
+
+// this way to use simple map function  but this is not map concept 
+// $map : 1,4,5,6;
+
+
+$map : (
+    one : 1,
+    two: 2,
+    three : 3
 );
- 
-@each $keys, $value in $breakpoints {
-    @media screen and (min-width:#{$value}) {
-        @if($keys !="xs") {
-            .d-#{$keys}-none {
-                display: none;
-            }
-        }
-        @else{
-            .d-none{
-                display: none;
-            }
-        }
 
-        @if($keys !="xs") {
-            .d-#{$keys}-block {
-                display: block;
-            }
-        } 
-        @else{
-            .d-block{
-                display: block;
-            }
-        }
+@each $map-name ,$map-value in $map {
+    .map-loop{
+        width: $map-name;
     }
 }
+

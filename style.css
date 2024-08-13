@@ -43,63 +43,34 @@ button {
   padding: 20px;
 }
 
-.box-1 {
-  width: 100;
+.loop-for {
+  width: 1px;
 }
 
-.box-2 {
-  width: 200;
+.loop-for {
+  width: 2px;
 }
 
-.box-3 {
-  width: 300;
+.loop-for {
+  width: 3px;
 }
 
-@media screen and (min-width: 0) {
-  .d-none {
-    display: none;
-  }
-  .d-block {
-    display: block;
-  }
+.loop-for {
+  width: 4px;
 }
-@media screen and (min-width: 576px) {
-  .d-sm-none {
-    display: none;
-  }
-  .d-sm-block {
-    display: block;
-  }
+
+.loop-for {
+  width: 5px;
 }
-@media screen and (min-width: 768px) {
-  .d-md-none {
-    display: none;
-  }
-  .d-md-block {
-    display: block;
-  }
+
+.map-loop {
+  width: one;
 }
-@media screen and (min-width: 992px) {
-  .d-lg-none {
-    display: none;
-  }
-  .d-lg-block {
-    display: block;
-  }
+
+.map-loop {
+  width: two;
 }
-@media screen and (min-width: 1200px) {
-  .d-xl-none {
-    display: none;
-  }
-  .d-xl-block {
-    display: block;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .d-xxl-none {
-    display: none;
-  }
-  .d-xxl-block {
-    display: block;
-  }
+
+.map-loop {
+  width: three;
 }/*# sourceMappingURL=style.css.map */
